@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2c3e50;
+    color: black;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-secondary {
+    background: #3498db;
+}
+
+.btn:hover {
+    background: #219150;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: black;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #27ae60; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+   background: #219150;
+}
+.btn-hijau {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: green;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 16px;
+   text-align: center;
+}
+.btn-hijau:hover {
+   background-color: darkgreen;
+}
+/* Latar Belakang dengan Efek Partikel */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: move 10s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.circle:nth-child(2) {
+    top: 40%;
+    right: 10%;
+}
+
+.circle:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    50% {
+        transform: scale(1.5) translateX(50px);
+    }
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+/* Container Form */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: slideUp 1s ease-out;
+}
+
+/* Form Animations */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+    animation: fadeInForm 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: fadeInText 0.5s ease-in-out;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbb;
+    animation: fadeInText 1s ease-in-out;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeInInput 0.5s ease-in-out forwards;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #333;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: pulseButton 1s infinite ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Animasi Tombol */
+@keyframes pulseButton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animasi untuk Loading */
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Pesan Kesalahan */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    display: none;  /* Tersembunyi secara default */
+    animation: shakeError 0.5s ease-in-out;
+}
+
+/* Gaya untuk Toast */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    z-index: 999;
+    opacity: 0;
+    animation: toastAnim 0.5s forwards, fadeIn 1s ease-in-out;
+}
+
+/* Animasi Toast */
+@keyframes toastAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Gaya untuk Toast Sukses */
+.toast.success {
+    background-color: #4CAF50;
+}
+
+/* Gaya untuk Toast Error */
+.toast.error {
+    background-color: #F44336;
+}
+
+/* Efek Transisi untuk Button saat Disabled */
+button[disabled] {
+    background: linear-gradient(90deg, #ccc, #999);
+    cursor: not-allowed;
+    transform: scale(0.98);
+    animation: pulse 1s infinite ease-in-out;
+}
+
+/* Animasi untuk pesan kesalahan */
+@keyframes shakeError {
+    0% { transform: translateX(-10px); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Animasi Fade In untuk Body */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animasi Fade In untuk Form */
+@keyframes fadeInForm {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animasi Fade In untuk Input */
+@keyframes fadeInInput {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animasi Fade In untuk Teks */
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

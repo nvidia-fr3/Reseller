@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Latar Belakang dengan Partikel -->
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Container Utama -->
+    <div class="container">
+        <!-- Form Login -->
+
+        <div class="form-wrapper">
+            <form id="loginForm" class="form active">
+                <h2>Selamat Datang</h2>
+                <p class="subtitle">Silakan masuk ke akun Anda</p>
+                <input type="email" placeholder="Email" id="loginEmail" required>
+                <input type="password" placeholder="Kata Sandi" id="loginPassword" required>
+                <button type="submit">Masuk</button>
+                <div class="loading" id="loginLoading">Bentar...</div>
+                <div class="error-message" id="loginErrorMessage"></div>
+                <p><span class="switch" data-form="register">Reseller FR3</span></p>
+                </form>
+                <form id="registerForm" class="form">
+                <p class="subtitle">Isi form untuk membuat akun baru</p>
+                <input type="text" placeholder="Nama Anda" id="registerName" required>
+                <input type="email" placeholder="Email" id="registerEmail" required>
+                <input type="password" placeholder="Kata Sandi (min. 6 karakter)" id="registerPassword" required>
+                <button type="submit">Daftar</button>
+                <div class="loading" id="registerLoading">Mendaftarkan...</div>
+            </form>
+        </div>
+
+    <!-- Dekorasi Tambahan -->
+    <div class="light-effects">
+        <div class="light light1"></div>
+        <div class="light light2"></div>
+        <div class="light light3"></div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <!-- Pesan sukses atau error akan ditampilkan di sini -->
+    <script src="script.js"></script>
+</body>
+</html>
